@@ -7,6 +7,7 @@
 # Ignore bundler config
 /.bundle
 
+# Not sure if this is needed since it is in the RM config
 .idea/workspace.xml
 
 # Ignore the default SQLite database.
