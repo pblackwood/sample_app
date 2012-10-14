@@ -37,4 +37,16 @@ describe "StaticPages" do
       page.should have_selector('title', :text => "About Us")
     end
   end
+
+  describe "Contact Us Page" do
+    it "Should have an H1 for 'Contact Us'" do
+      visit '/static_pages/contact'
+      page.should have_selector('h1', :text => 'Contact Us')
+    end
+
+    it "Should have the title 'Contact Us'" do
+      visit '/static_pages/contact'
+      page.should have_selector('title', :text => "Contact Us")
+    end
+  end
 end
